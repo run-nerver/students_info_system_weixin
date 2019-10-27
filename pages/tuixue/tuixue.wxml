@@ -1,0 +1,40 @@
+<import src="../templates/name-number-templates/name-number-templates.wxml" />
+<import src="../templates/submit-reset/submit-reset.wxml" />
+<import src="../templates/yuanyin/yuanyin" />
+<form bindsubmit="formSubmit">
+<view>
+<template is="name-number" />
+<view class="weui-cells__title">
+<text class="iconfont icon-icon_mobilephone" style='font-size:30rpx'></text>
+个人联系方式</view>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+        <view class="weui-cell__bd">
+            <input class="weui-input" name="per_tel" placeholder="请输入您的联系方式" />
+        </view>
+    </view>
+</view>
+<view class="weui-cells__title">
+<text class="iconfont icon-icon_voipphone" style='font-size:30rpx'></text>
+家庭联系方式</view>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+        <view class="weui-cell__bd">
+            <input class="weui-input" name="home_tel" placeholder="请输入您的家庭联系方式" />
+        </view>
+    </view>
+</view>
+<view class="weui-cells__title">
+<text class="iconfont icon-icon_homepage" style='font-size:30rpx'></text>
+通讯地址</view>
+<view class="weui-cells weui-cells_after-title">
+    <view class="weui-cell ">
+        <view class="weui-cell__bd">
+            <input class="weui-input" name="home_address" placeholder="请输入您的有效联系地址" />
+        </view>
+    </view>
+</view>
+<template is="input-yuanyin" />
+<template is="submit-reset" />
+</view>
+</form>

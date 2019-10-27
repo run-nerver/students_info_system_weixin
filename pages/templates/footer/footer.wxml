@@ -1,0 +1,13 @@
+<template name="footer-ye">
+  <view class="page">
+    <view class="weui-footer weui-footer_fixed-bottom">
+      <view class="weui-article__p">
+      </view>
+      <view class="weui-footer__links">
+        <navigator url="https://github.com/tongxunkeji" class="weui-footer__link">同讯科技</navigator>
+      </view>
+      <view class="weui-footer__text">Copyright © 同讯科技</view>
+    </view>
+
+  </view>
+</template>

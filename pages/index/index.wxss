@@ -1,0 +1,157 @@
+page{
+  /* background:#eeecec; */
+  /* background-image: url('https://i.loli.net/2019/10/14/Lr4xtoAamSeI21P.png') */
+}
+.enable{
+  z-index: 99999;
+  background: #404040;
+  opacity: 0.8;
+  position: absolute;
+  width: 100;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.enable text{
+  color: #fafafa;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+
+.grid {
+  background: #ffffff;
+  margin-bottom:10px;
+}
+.services{
+  background:#f5f5f5;
+
+}
+.navigator{
+padding:20px 10px;
+}
+.grid-items {
+  
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+.grid-items::before{
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 1px;
+    border-top: 1px solid #d9d9d9;
+}
+.grid-items::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-left: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+.grid-item{
+    position: relative;
+    float: left;
+    width: 33.33333333%;
+    box-sizing: border-box;
+}
+
+.grid-item::before{
+   content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    bottom: 0;
+    border-right: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+    -webkit-transform: scaleX(0.5);
+    transform: scaleX(0.5);
+}
+.grid-item::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #d9d9d9;
+    color: #d9d9d9;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.item-content{
+    position: relative;
+
+    padding: 0px 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.item-content-icon{
+     width: 32px;
+    height: 32px;
+    margin: 0 auto;
+}
+.item-content-icon image{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.weui-grid_label {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #707070;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.grid-title{
+    display: block;
+  
+    font-weight: bold;
+    color: #707070;
+    font-size: 14px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 7px;
+
+}
+.mask{
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  z-index: 999;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.619);
+  color: #eee8e8;
+  line-height: 32px;
+  display: flex;
+
+}

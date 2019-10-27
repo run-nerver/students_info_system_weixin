@@ -1,0 +1,16 @@
+<import src="../templates/name-number-templates/name-number-templates.wxml" />
+<import src="../templates/submit-reset/submit-reset.wxml" />
+<import src="../templates/yuanyin/yuanyin" />
+<view class="page">
+  <form bindsubmit="formSubmit">
+    <template is="name-number" />
+    <template is="input-yuanyin" />
+    <template is="submit-reset" />
+    <view class="icon-box">
+      <icon type="&#xe600;" size="64"></icon>
+      <view class="icon-box__ctn">
+
+      </view>
+    </view>
+  </form>
+</view>

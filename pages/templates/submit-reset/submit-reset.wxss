@@ -1,0 +1,14 @@
+
+.goodbutton {
+  margin-top: 30px;
+  width: 80%;
+  background-color: rgb(252, 126, 67);
+  color: white;
+  border-radius: 98rpx;
+  background: bg_red;
+}
+ 
+/* 按下变颜色 */
+.hover {
+  background:  rgb(236, 179, 156);
+}

@@ -1,0 +1,98 @@
+<import src="../templates/name-number-templates/name-number-templates.wxml" />
+<import src="../templates/submit-reset/submit-reset.wxml" />
+<import src="../templates/yuanyin/yuanyin" />
+<form bindsubmit="formSubmit">
+  <view class="page">
+    <template is="name-number" />
+<view class="weui-cell weui-cell_select">
+      <view class="weui-cell__hd weui-cell__hd_in-select-after">
+        <view class="weui-label">
+          <text class="iconfont icon-icon_new_recruit" style='font-size:33rpx'></text> 性别
+        </view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker name="sex" bindchange="bindSexChange" value="{{index}}" range="{{sex}}">
+          <view class="weui-select weui-select_in-select-after">
+            {{sex[index]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+
+    <view class="weui-cells__title">
+      <text class="iconfont icon-icon_task" style='font-size:30rpx'></text> 所在院系
+    </view>
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell ">
+        <view class="weui-cell__bd">
+          <picker name='dom_campus' mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+            <view class="picker">
+              {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+    </view>
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">
+          <text class="iconfont icon-icon_subordinate" style='font-size:33rpx'></text> 所在专业
+        </view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="major" placeholder="填写你的专业" />
+      </view>
+    </view>
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">
+          <text class="iconfont icon-icon_scan_namecard" style='font-size:33rpx'></text> 证书编号
+        </view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="code" placeholder="填写你的证书编号" />
+      </view>
+    </view>
+    <view class="weui-cell weui-cell_select">
+      <view class="weui-cell__hd weui-cell__hd_in-select-after">
+        <view class="weui-label">
+          <text class="iconfont icon-icon_new_recruit" style='font-size:33rpx'></text> 学制
+        </view>
+      </view>
+      <view class="weui-cell__bd">
+        <picker name="leng_school" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="weui-select weui-select_in-select-after">
+            {{array[index]}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="weui-cell ">
+    <view class="weui-cell__hd">
+        <view class="weui-label">
+        <text class="iconfont icon-icon_calendar" style='font-size:33rpx'></text>
+        入学日期</view>
+    </view>
+    <view class="weui-cell__bd">
+        <picker name="entrance_school" mode="date" value="{{date}}" start="1900-09-01" end="2099-09-01" bindchange="bindDateChange1" fields="year">
+            <view class="weui-input">{{entrance_date}}</view>
+        </picker>
+    </view>
+</view>
+
+<view class="weui-cell ">
+    <view class="weui-cell__hd">
+        <view class="weui-label">
+        <text class="iconfont icon-icon_calendar" style='font-size:33rpx'></text>
+        离校日期</view>
+    </view>
+    <view class="weui-cell__bd">
+        <picker name="leave_school" mode="date" value="{{date}}" start="1900-09-01" end="2099-09-01" bindchange="bindDateChange2" fields="year">
+            <view class="weui-input">{{leave_date}}</view>
+        </picker>
+    </view>
+</view>
+    <template is="input-yuanyin" />
+    <template is="submit-reset" />
+  </view>
+</form>

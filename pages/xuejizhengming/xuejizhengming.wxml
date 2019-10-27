@@ -1,0 +1,36 @@
+<import src="../templates/name-number-templates/name-number-templates.wxml" />
+<import src="../templates/submit-reset/submit-reset.wxml" />
+<import src="../templates/yuanyin/yuanyin" />
+<view class="page">
+  <form bindsubmit="formSubmit">
+    <view class="weui-cells weui-cells_form">
+      <template is="name-number" />
+      <view class="weui-cell ">
+          <view class="weui-cell__hd">
+              <view class="weui-label">
+              <text class="iconfont icon-icon_namecard" style='font-size:33rpx'></text>
+              身份证号</view>
+          </view>
+          <view class="weui-cell__bd">
+              <input name="identity" class="weui-input" placeholder="填写本人身份证号码"/>
+          </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <label for="" class="weui-label">
+          <text class="iconfont icon-icon_new_recruit" style='font-size:33rpx'></text>
+          学制：</label>
+        </view>
+        <view class="weui-cell__bd">
+          <picker name="leng_school" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+              {{array[index]}}
+            </view>
+          </picker>
+        </view>
+      </view>
+      <template is="input-yuanyin" />
+      <template is="submit-reset" />
+    </view>
+  </form>
+</view>

@@ -1,0 +1,31 @@
+<import src="../templates/footer/footer" />
+
+<view class="page">
+  <image class="cover" style="width: 750rpx; height: 350rpx;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571756719182&di=ffbc5129b851395a6f8056d6e007951f&imgtype=0&src=http%3A%2F%2Fwww.jacenkj.com%2Fplugins%2Fueditor%2Fnet%2Fupload%2Fimage%2F20180629%2F6366588175697572244035930.png"></image>
+  
+  <view id='services' class='services'>
+    <view class="grid" wx:for="{{servers}}" wx:key="">
+      <view class='grid-title'>
+        <text>{{item.title}}</text>
+      </view>
+      <view class='grid-items'>
+        <block wx:for="{{item.items}}" wx:key="">
+          <view class='grid-item'>
+            <view wx:if="{{item.enabled}}" class='mask'>
+              <text>{{item.detail}}</text>
+            </view>
+            <view class='navigator' data-path='{{item.url}}' data-isBind='{{item.isBind}}' bindtap='bindNavigator' hover-class="none">
+              <view class='item-content'>
+                <view class="item-content-icon">
+                  <image src="{{item.icon}}" mode="scaleToFill" />
+                </view>
+                <text class="weui-grid_label">{{item.name}}</text>
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+  <template is="footer-ye" />
+</view>

@@ -1,0 +1,20 @@
+<import src="../templates/name-number-templates/name-number-templates.wxml" />
+<import src="../templates/submit-reset/submit-reset.wxml" />
+<import src="../templates/yuanyin/yuanyin" />
+<form bindsubmit="formSubmit">
+  <view class="page">
+    <template is="name-number" />
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+        <view class="weui-label">
+        <text class="iconfont icon-icon_scan_namecard" style='font-size:33rpx'></text>
+        原宿舍号</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="dom_dorm" placeholder="原本所在的宿舍号" />
+      </view>
+    </view>
+    <template is="input-yuanyin" />
+    <template is="submit-reset" />
+  </view>
+</form>

@@ -1,0 +1,28 @@
+<template name="name-number">
+
+  <view class="page">
+
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+
+        <view class="weui-label">
+          <text class="iconfont icon-icon_boss" style='font-size:33rpx'></text> 姓名
+        </view>
+      </view>
+      <view class="weui-cell__bd">
+        <input name="name" class="weui-input" placeholder="填写本人姓名" />
+      </view>
+    </view>
+    <view class="weui-cell ">
+      <view class="weui-cell__hd">
+      
+        <view class="weui-label">
+        <text class="iconfont icon-icon_details" style='font-size:33rpx'></text>
+        学号</view>
+      </view>
+      <view class="weui-cell__bd">
+        <input class="weui-input" name="number" placeholder="填写你的学号" />
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,13 @@
+<template name="submit-reset">
+<view class="page">
+  <view class="page__bd page__bd_spacing">
+    <button class="weui-btn weui-btn_primary" formType="submit" type="primary">
+    <text class="iconfont icon-icon_shield" style='font-size:33rpx'></text>
+    提交</button>
+    <button class="weui-btn" type="warn" formType="reset" >
+    <text class="iconfont icon-icon_refresh" style='font-size:33rpx'></text>
+    重置</button>
+   
+  </view>
+</view>
+</template>

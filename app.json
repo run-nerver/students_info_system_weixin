@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/xuejizhengming/xuejizhengming",
+    "pages/zhuxiao/zhuxiao",
+    "pages/baoliuxueji/baoliuxueji",
+    "pages/xueli/xueli",
+    "pages/tuixue/tuixue",
+    "pages/xiuxue/xiuxue",
+    "pages/zhuanzhuanye/zhuanzhuanye",
+    "pages/fuxue/fuxue",
+    "pages/about/about"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "XX学籍助手",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json"
+}

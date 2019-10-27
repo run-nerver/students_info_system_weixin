@@ -1,3 +1,5 @@
+为帮助更多python爱好者学习，后期会录制一个免费课程---flask基础实战，学籍系统从0开发，以此系统为模板讲解flask开发，欢迎有兴趣的同学进群共同交流  
+##### QQ群号：102909102
 ## 这里是学籍管理系统配套的小程序版
 配套后端请看:  
 [https://github.com/tongxunkeji/student_info_system](https://github.com/tongxunkeji/student_info_system)
